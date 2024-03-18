@@ -1,0 +1,39 @@
+<!-- listaClientes.handlebars -->
+<main>
+  <div class="container">
+    <img src="img/conections.svg" alt="" style="height: 400px" />
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Endereço</th>
+        <th scope="col">Bairro</th>
+        <th scope="col">CEP</th>
+        <th scope="col">Cidade</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Obs.</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Excluir</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each listaClientes}}
+        <tr>
+          <th scope="row">{{dataValues.id}}</th>
+          <td>{{dataValues.nome}}</td>
+          <td>{{dataValues.endereco}}</td>
+          <td>{{dataValues.bairro}}</td>
+          <td>{{dataValues.cep}}</td>
+          <td>{{dataValues.cidade}}</td>
+          <td>{{dataValues.estado}}</td>
+          <td>{{dataValues.observacao}}</td>
+          <td><button type="button" class="btn btn-warning">Editar</button></td>
+          <td><button type="button" class="btn btn-danger">Excluir</button></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</main>

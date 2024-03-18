@@ -1,0 +1,88 @@
+<main>
+  <div class="container">
+    <h1>Cadastro de Clientes</h1>
+    <img src="img/cadastro.svg" alt="" style="height: 400px">
+  </div>
+  
+  <form action="cadastro/salvar"  method="POST" >
+
+    <div class="form-floating mb-3">
+      <input
+        name="nome"
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        placeholder="Nome completo"
+      />
+      <label for="floatingInput">Nome</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input
+        name="endereco"
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        placeholder="Rua ..."
+      />
+      <label for="floatingInput">Logradouro</label>
+    </div>
+
+     <div class="form-floating mb-3">
+      <input
+        name="bairro"
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        placeholder="Digite seu bairro"
+      />
+      <label for="floatingInput">CEP</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input
+        name="cep"
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        placeholder="00000-000"
+      />
+      <label for="floatingInput">CEP</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input
+        name="cidade"
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        placeholder="Digite sua o nome de sua cidade"
+      />
+      <label for="floatingInput">Cidade</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input
+        name="estado"
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        placeholder="Digite seu estado"
+      />
+      <label for="floatingInput">Estado</label>
+    </div>
+
+    <div class="form-floating">
+      <textarea
+        name="observacao"
+        class="form-control"
+        placeholder="Digite a observação"
+        id="floatingTextarea"
+      ></textarea>
+      <label for="floatingTextarea">Observação</label>
+    </div>
+   <input class="btn btn-primary" type="submit" value="Submit">
+
+  </form>
+
+</main>
