@@ -1,8 +1,3 @@
-const clientes = require("./repositories/banco");
-const cadastraCliente = require("./services/clientesService");
-
-
-
 const express = require("express")
 const app = express()
 const port = process.env.PORT || 8081

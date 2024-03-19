@@ -24,7 +24,7 @@ async function cadastraCliente({
 
 async function consultaTodosClientes(){
   const todosClientes = await clientes.findAll();
-  console.log(todosClientes);
+  //console.log(todosClientes);
   return todosClientes
 }
 

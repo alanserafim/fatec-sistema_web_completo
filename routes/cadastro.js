@@ -17,7 +17,7 @@ module.exports = function (app) {
       estado: req.body.estado,
       observacao: req.body.observacao,
     }
-    console.log(novoCliente);
+    //console.log(novoCliente);
     try {
       cadastraCliente(novoCliente);
       res.render("cadastro_sucesso");
